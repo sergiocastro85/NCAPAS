@@ -1,0 +1,10 @@
+D:\Usuarios\scastroc\source\repos\CRUD_NCAPAS\CapaDatos\bin\Debug\CapaDatos.dll
+D:\Usuarios\scastroc\source\repos\CRUD_NCAPAS\CapaDatos\bin\Debug\CapaDatos.pdb
+D:\Usuarios\scastroc\source\repos\CRUD_NCAPAS\CapaDatos\obj\Debug\CapaDatos.dll
+D:\Usuarios\scastroc\source\repos\CRUD_NCAPAS\CapaDatos\obj\Debug\CapaDatos.pdb
+D:\Usuarios\scastroc\source\repos\CRUD_NCAPAS\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+D:\PROYECTOS\NCAPAS\CapaDatos\bin\Debug\CapaDatos.dll
+D:\PROYECTOS\NCAPAS\CapaDatos\bin\Debug\CapaDatos.pdb
+D:\PROYECTOS\NCAPAS\CapaDatos\obj\Debug\CapaDatos.dll
+D:\PROYECTOS\NCAPAS\CapaDatos\obj\Debug\CapaDatos.pdb
+D:\PROYECTOS\NCAPAS\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
