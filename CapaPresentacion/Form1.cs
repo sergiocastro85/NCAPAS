@@ -46,10 +46,10 @@ namespace CapaPresentacion
             dataGridView1.DataSource = obj.MostrarProducto();
         }
 
-        private void BuscarProducto(int Id)
+        private void BuscarProducto(string nombre)
         {
             CN_Productos objetoProducto = new CN_Productos();
-            dataGridView1.DataSource = objetoProducto.BuscarProduc(Convert.ToInt32(txtBuscar.Text));
+            dataGridView1.DataSource = objetoProducto.BuscarProduc(txtBuscar.Text);
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -130,7 +130,7 @@ namespace CapaPresentacion
         private void btnBuscar_Click(object sender, EventArgs e)
         {
 
-            BuscarProducto(Convert.ToInt32(txtBuscar.Text));
+            BuscarProducto(txtBuscar.Text);
 
                  
         }

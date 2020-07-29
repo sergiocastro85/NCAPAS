@@ -20,10 +20,10 @@ namespace CapaNegocio
             return tabla;
         }
 
-        public DataTable BuscarProduc(int Id)
+        public DataTable BuscarProduc(string nombre)
         {
             DataTable tabla = new DataTable();
-            tabla= objCD.Buscar(Id);
+            tabla= objCD.Buscar(nombre);
             return tabla;
         }
    

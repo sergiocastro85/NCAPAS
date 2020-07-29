@@ -27,10 +27,10 @@ namespace CapaDatos
 
         }
 
-        public DataTable Buscar(int Id)
+        public DataTable Buscar(string nombre)
         {
             comando.Connection = conexion.AbrirConexion();
-            comando.CommandText = "select * from Productos where Id=" + Id;
+            comando.CommandText = "select * from Productos where Nombre='" + nombre +"'";
             leer = comando.ExecuteReader();
             tabla.Load(leer);
             return tabla;
