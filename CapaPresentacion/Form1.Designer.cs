@@ -53,7 +53,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(12, 54);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(452, 312);
+            this.dataGridView1.Size = new System.Drawing.Size(464, 300);
             this.dataGridView1.TabIndex = 0;
             // 
             // txtNombre
@@ -173,7 +173,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.Location = new System.Drawing.Point(261, 27);
+            this.btnBuscar.Location = new System.Drawing.Point(229, 27);
             this.btnBuscar.Name = "btnBuscar";
             this.btnBuscar.Size = new System.Drawing.Size(103, 23);
             this.btnBuscar.TabIndex = 14;
@@ -183,7 +183,7 @@
             // 
             // txtBuscar
             // 
-            this.txtBuscar.Location = new System.Drawing.Point(44, 27);
+            this.txtBuscar.Location = new System.Drawing.Point(12, 30);
             this.txtBuscar.Name = "txtBuscar";
             this.txtBuscar.Size = new System.Drawing.Size(211, 20);
             this.txtBuscar.TabIndex = 15;
@@ -192,11 +192,11 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(12, 25);
+            this.label6.Location = new System.Drawing.Point(12, 7);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(26, 20);
+            this.label6.Size = new System.Drawing.Size(65, 20);
             this.label6.TabIndex = 16;
-            this.label6.Text = "ID";
+            this.label6.Text = "Nombre";
             // 
             // frmForm1
             // 
