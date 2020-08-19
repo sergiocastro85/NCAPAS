@@ -7,7 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaDatos.DTO;
 using CapaNegocio;
+
 
 namespace CapaPresentacion
 {
@@ -25,13 +27,32 @@ namespace CapaPresentacion
         {
             try
             {
-                objCNTransaccion.GuardarTransation(cmbBanco.Text, cmbTransation.Text, Convert.ToInt32(txtCantidad.Text), DateTime.Parse(txtFecha.Text));
+                objCNTransaccion.GuardarTransation(Convert.ToInt32(cmbBanco.SelectedValue),Convert.ToInt32(cmbTransation.SelectedValue), Convert.ToInt32(txtCantidad.Text), Convert.ToString(dateTimePicker1.Value.Date.ToString("yyyy-MM-dd")));
                 MessageBox.Show("se almaceno correctamente");
             }
             catch (Exception ex)
             {
                 MessageBox.Show("no fue posible almacenar los datos"+ ex);
             }
+        }
+
+  
+
+
+        private void Transation_Load(object sender, EventArgs e)
+        {
+
+            List<Corresponsal> lista = objCNTransaccion.llenar();
+            cmbBanco.DataSource = lista;
+            cmbBanco.DisplayMember = "Nombre";
+            cmbBanco.ValueMember = "Id";
+
+            List<Transaccion> listaTransaccion = objCNTransaccion.LlenarTransaccion();
+            cmbTransation.DataSource = listaTransaccion;
+            cmbTransation.DisplayMember = "TipoTransaccion";
+            cmbTransation.ValueMember = "Id";
+
+
         }
     }
 }

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtFecha = new System.Windows.Forms.TextBox();
             this.txtCantidad = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,14 +36,8 @@
             this.cmbBanco = new System.Windows.Forms.ComboBox();
             this.cmbTransation = new System.Windows.Forms.ComboBox();
             this.btnGuardar = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
-            // 
-            // txtFecha
-            // 
-            this.txtFecha.Location = new System.Drawing.Point(125, 172);
-            this.txtFecha.Name = "txtFecha";
-            this.txtFecha.Size = new System.Drawing.Size(139, 20);
-            this.txtFecha.TabIndex = 4;
             // 
             // txtCantidad
             // 
@@ -115,11 +108,21 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CustomFormat = "MM/dd/yyyy hh:mm:ss";
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker1.Location = new System.Drawing.Point(125, 172);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(139, 20);
+            this.dateTimePicker1.TabIndex = 8;
+            // 
             // Transation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(576, 334);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.cmbTransation);
             this.Controls.Add(this.cmbBanco);
@@ -128,17 +131,15 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtCantidad);
-            this.Controls.Add(this.txtFecha);
             this.Name = "Transation";
             this.Text = "Transation";
+            this.Load += new System.EventHandler(this.Transation_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox txtFecha;
         private System.Windows.Forms.TextBox txtCantidad;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -147,5 +148,6 @@
         private System.Windows.Forms.ComboBox cmbBanco;
         private System.Windows.Forms.ComboBox cmbTransation;
         private System.Windows.Forms.Button btnGuardar;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }
